@@ -4,7 +4,7 @@
       <li
       v-for="(page, index) of pages"
       class="page"
-      :class="{ 'active': index === activePage }"
+      v-bind:class="{ 'active': index === activePage }"
       @click="changePage(index)"
       >
       <div> {{ page.title }} </div>
@@ -20,8 +20,8 @@
         name: 'Notebook',
         props: ['pages', 'activePage'],
         methods: {
-            changePage () {
-                this.$emit('change-page')
+            changePage (index) {
+                this.$emit('change-page', index)
             },
             newPage () {
                 this.$emit('new-page')

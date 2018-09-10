@@ -3,7 +3,7 @@
      <div v-if="page">
         <label for="title"> Title</label>
         <input type="text" v-model="page.title" class="title" name="title">
-        <label for="cocntent"> Content</label>
+        <label for="content"> Content</label>
         <textarea class="content" v-model="page.content" name="content" placeholder="Enter some text..."> </textarea>
         <button @click="deletePage()"> Delete Page</button>
         <button @click="savePage()"> Save Page </button>
