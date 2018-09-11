@@ -14,12 +14,12 @@ import Firebase from "firebase"
 
   // Initialize Firebase
   const config = {
-    apiKey: "AIzaSyAs_Z19X56Y4RLipX-ECRFVu3MZ6eAbaQc",
-    authDomain: "notebook-d932b.firebaseapp.com",
-    databaseURL: "https://notebook-d932b.firebaseio.com",
-    projectId: "notebook-d932b",
+    apiKey: "apiKey",
+    authDomain: "authDomain",
+    databaseURL: "databaseURL",
+    projectId: "projectId",
     storageBucket: "",
-    messagingSenderId: "720350948673"
+    messagingSenderId: "messagingSenderId"
   };
   
   let database = Firebase.initializeApp(config).database().ref('notebook');
